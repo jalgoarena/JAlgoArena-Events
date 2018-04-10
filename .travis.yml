@@ -1,0 +1,21 @@
+language: Java
+jdk:
+- oraclejdk8
+before_cache:
+- rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+cache:
+  directories:
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
+before_deploy:
+- "./gradlew releaseZip"
+deploy:
+  provider: releases
+  api_key:
+    secure: v1EHGqE0tD9kh4DT/eDXn9TktxoaUzogArq+MoHirFl3mxiRUJrN+ifs0SLy0suT/Tl14FBR181lN5/UI3RE4oauoSExGpoScYkeUzKwpLSocvqdMKN38WBtmXQ+iibKk/fwuIsqMJqzeGz4yJVdG+I5XJNcY8RkFYvlDGn0fUls3ZGNjO1QK3I44L7clBTWPYKeDlZGTRq+KxWIaRHBrdjuhpbxwk4ubjJ2Sxi2HBU/LnqlH32yqKNFS85NQe+kx7w5Dikh2um1aJvwT/NPUqq+Mm1X8czI65qcyNB6+SKIorFgQhLPcDGj3MfhTMzRAfXLC1iePqjo/AhwxIz08TkjGx87qjQqj+lQVGrzblWWDJaYlQuBBuy63zIYEdn1yKoSbIti3pW3756wqV7JZbm8m7KdAPBRg8Df5vZpvAdoucrG/z/GvEbPev8HFBmLRDVKRGe68BpXm46rDSR3so33+SotmAjnxyyP5R2F562hgjFvMkzcrBJB4YoVcAOFFjg4P12mNQ6iepMwkK+LpiazRKuupG8G37yVnwDbEp62ncjl5OVgmOMhY5aLEqJkdrJsGAokriTYp+rWW7zB7sDF6ZMeJvnttQkgQdCgJNhD6EZ3vzKck3GNJ/PMPU0ivyMl1GJyrISQEPjCJB8ydcZO16hLXM/myJ7CMQBqcIQ=
+  file_glob: true
+  file: './build/libs/JAlgoArena-Events-*.zip'
+  skip_cleanup: true
+  on:
+    repo: spolnik/JAlgoArena-Events
+    tags: true
