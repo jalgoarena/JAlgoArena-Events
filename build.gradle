@@ -26,7 +26,8 @@ dependencies {
     compile "org.springframework.kafka:spring-kafka",
             "org.springframework.boot:spring-boot-starter-websocket",
             "org.springframework.boot:spring-boot-starter-actuator",
-            "org.jetbrains.kotlin:kotlin-stdlib"
+            "org.jetbrains.kotlin:kotlin-stdlib",
+            'net.logstash.logback:logstash-logback-encoder:5.1'
 
     testCompile 'junit:junit:4.12',
             'pl.pragmatists:JUnitParams:1.0.5',
