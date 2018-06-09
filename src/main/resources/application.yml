@@ -9,16 +9,3 @@ spring:
     bootstrap-servers: ${BOOTSTRAP_SERVERS:localhost:9092,localhost:9093,localhost:9094}
     consumer:
       group-id: events
-
----
-spring:
-  profiles: heroku
-eureka:
-  instance:
-    hostname: ${APP_NAME:jalgoarena-events}.herokuapp.com
-    nonSecurePort: 80
-
-logging:
-  level:
-    ROOT: INFO
-    org.springframework.web: INFO
