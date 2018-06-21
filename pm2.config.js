@@ -4,7 +4,7 @@ module.exports = {
             name: 'events',
             args: [
                 "-jar",
-                "build/libs/jalgoarena-events-2.0.0-SNAPSHOT.jar"
+                "build/libs/jalgoarena-events-2.1.0-SNAPSHOT.jar"
             ],
             script: 'java',
             env: {
