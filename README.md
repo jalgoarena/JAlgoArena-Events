@@ -2,10 +2,6 @@
 
 JAlgoArena Events microservice to publish Events via WebSocket STOMP messages
 
-Events:
-* refresh ranking
-* refresh user submissions
-
 - [Introduction](#introduction)
 - [WS API](#ws-api)
 - [Components](#components)
@@ -26,6 +22,11 @@ Events:
 | ---- | --------------- |
 | WS/SockJS [/events-websocket] | WebSocket endpoint, uses SockJS/WS |
 | [/topic/events] | Topic to subscribe for events |
+
+## Stomp Events
+
+* refresh ranking
+* refresh user submissions
 
 ## Components
 
