@@ -38,11 +38,9 @@ Events:
 - in next stage, GitHub notifies Travis CI about changes
 - Travis CI runs whole continuous integration flow, running compilation, tests and generating reports
 - coverage report is sent to Codecov
-- application is deployed into Heroku machine
 
 ## Infrastructure
 
-- Heroku (PaaS)
 - Spring Boot, WebSockets
 - TravisCI - https://travis-ci.org/spolnik/JAlgoArena-Events
 - Apache Kafka
