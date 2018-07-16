@@ -6,4 +6,4 @@ WORKDIR /app
 COPY build/libs/jalgoarena-events-*.jar /app/
 
 EXPOSE 5005
-CMD java -jar /app/jalgoarena-events-*.jar
+CMD java -XX:+PrintFlagsFinal $JAVA_OPTS -jar /app/jalgoarena-events-*.jar
