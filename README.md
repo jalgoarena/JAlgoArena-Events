@@ -1,4 +1,4 @@
-# JAlgoArena Events [![Build Status](https://travis-ci.org/spolnik/JAlgoArena-Events.svg?branch=master)](https://travis-ci.org/spolnik/JAlgoArena-Events) [![codecov](https://codecov.io/gh/spolnik/JAlgoArena-Events/branch/master/graph/badge.svg)](https://codecov.io/gh/spolnik/JAlgoArena-Events) [![GitHub release](https://img.shields.io/github/release/spolnik/jalgoarena-events.svg)]()
+# JAlgoArena Events [![Build Status](https://travis-ci.org/jalgoarena/JAlgoArena-Events.svg?branch=master)](https://travis-ci.org/jalgoarena/JAlgoArena-Events) [![codecov](https://codecov.io/gh/spolnik/JAlgoArena-Events/branch/master/graph/badge.svg)](https://codecov.io/gh/spolnik/JAlgoArena-Events) [![GitHub release](https://img.shields.io/github/release/spolnik/jalgoarena-events.svg)]()
 
 JAlgoArena Events microservice to publish Events via WebSocket STOMP messages
 
