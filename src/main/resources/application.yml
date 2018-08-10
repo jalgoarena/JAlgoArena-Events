@@ -2,12 +2,10 @@ logging:
   path: ./logs
 
 server:
-  port: ${PORT:5005}
+  port: ${PORT:3002}
 
 spring:
   kafka:
     bootstrap-servers: ${BOOTSTRAP_SERVERS:localhost:9092,localhost:9093,localhost:9094}
     consumer:
       group-id: ${KAFKA_CONSUMER_GROUP_ID:events}
-      max-poll-records: 10000
-      fetch-max-wait: 1s
